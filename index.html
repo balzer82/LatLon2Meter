@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Latlon2meter by balzer82</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Latlon2meter</h1>
+        <p class="header">Python Script to calculate the Distance between two Lat/Lon Points</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/balzer82/LatLon2Meter/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/balzer82/LatLon2Meter/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/balzer82/LatLon2Meter">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/balzer82">balzer82</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a name="latlon2meter" class="anchor" href="#latlon2meter"><span class="octicon octicon-link"></span></a>LatLon2Meter</h1>
+
+<p>Python Script to calculate the distance between two points from Lat/Lon Coordinates</p>
+
+<h2>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use?</h2>
+
+<p><code>python LatLon2Meter.py 38.7436265 -9.1602036 52.5075419 13.4261418</code></p>
+
+<p>Outputs</p>
+
+<pre><code>Calculating Distance from 1600-046 Lisbon, Portugal to 10179 Berlin, Germany
+Entfernung aus Pythagoras:          2331854.029m (ca. 2331km)
+Entfernung aus Seitencosinus:       2314672.226m (ca. 2314km)
+Berechnung über Pythagoras macht -17.18km (0.74%) Fehler.
+'Distance.png' saved. Done.
+</code></pre>
+
+<p><img src="https://raw.github.com/balzer82/LatLon2Meter/master/Distance.png" alt="Globe"></p>
+
+<p>The coordinates (Lat/Lon) have to be in Decimal Degrees, not in DD°mm'ssss''</p>
+
+<h2>
+<a name="what-does-this-do" class="anchor" href="#what-does-this-do"><span class="octicon octicon-link"></span></a>What does this do?</h2>
+
+<p>Calculates the distance between two points with two different methods:</p>
+
+<ul>
+<li>Pythagoras</li>
+<li>Great Circle via Cosine (better)</li>
+</ul><h2>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<ul>
+<li>Matplotlib for Globe output</li>
+<li>requests for Reverse-Geoencoding of the Lat/Lon Coordinates</li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-46744695-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
