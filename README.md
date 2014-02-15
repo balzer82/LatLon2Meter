@@ -5,9 +5,10 @@ Python Script to calculate the distance between two points from Lat/Lon Coordina
 
 ## How to use?
 
-`python LatLon2Meter.py 38.7436265 -9.1602036 52.5075419 13.4261418`
-
-Outputs
+```python
+python LatLon2Meter.py 38.7436265 -9.1602036 52.5075419 13.4261418
+```
+is doin this for you:
 
 ```
 Calculating Distance from 1600-046 Lisbon, Portugal to 10179 Berlin, Germany
