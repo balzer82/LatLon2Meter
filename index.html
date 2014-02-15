@@ -1,35 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Latlon2meter by balzer82</title>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Latlon2meter : Python Script to calculate the Distance between two Lat/Lon Points" />
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Latlon2meter</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Latlon2meter</h1>
-        <p class="header">Python Script to calculate the Distance between two Lat/Lon Points</p>
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/balzer82/LatLon2Meter/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/balzer82/LatLon2Meter/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/balzer82/LatLon2Meter">View On GitHub</a></li>
-        </ul>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/balzer82/LatLon2Meter">View on GitHub</a>
 
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/balzer82">balzer82</a></p>
+          <h1 id="project_title">Latlon2meter</h1>
+          <h2 id="project_tagline">Python Script to calculate the Distance between two Lat/Lon Points</h2>
 
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/balzer82/LatLon2Meter/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/balzer82/LatLon2Meter/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-      </header>
-      <section>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h1>
 <a name="latlon2meter" class="anchor" href="#latlon2meter"><span class="octicon octicon-link"></span></a>LatLon2Meter</h1>
 
@@ -38,9 +39,10 @@
 <h2>
 <a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use?</h2>
 
-<p><code>python LatLon2Meter.py 38.7436265 -9.1602036 52.5075419 13.4261418</code></p>
+<div class="highlight highlight-python"><pre><span class="n">python</span> <span class="n">LatLon2Meter</span><span class="o">.</span><span class="n">py</span> <span class="mf">38.7436265</span> <span class="o">-</span><span class="mf">9.1602036</span> <span class="mf">52.5075419</span> <span class="mf">13.4261418</span>
+</pre></div>
 
-<p>Outputs</p>
+<p>is doin this for you:</p>
 
 <pre><code>Calculating Distance from 1600-046 Lisbon, Portugal to 10179 Berlin, Germany
 Entfernung aus Pythagoras:          2331854.029m (ca. 2331km)
@@ -69,12 +71,17 @@ Berechnung über Pythagoras macht -17.18km (0.74%) Fehler.
 <li>requests for Reverse-Geoencoding of the Lat/Lon Coordinates</li>
 </ul>
       </section>
-      <footer>
-        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Latlon2meter maintained by <a href="https://github.com/balzer82">balzer82</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		          <script type="text/javascript">
+
+              <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -84,6 +91,7 @@ Berechnung über Pythagoras macht -17.18km (0.74%) Fehler.
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
+
 
   </body>
 </html>
