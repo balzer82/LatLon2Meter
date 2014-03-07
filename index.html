@@ -35,6 +35,10 @@
 
 <p>Python Script to calculate the distance between two points from Lat/Lon Coordinates</p>
 
+<h4>
+<a name="ipython-notebook" class="anchor" href="#ipython-notebook"><span class="octicon octicon-link"></span></a><a href="http://nbviewer.ipython.org/github/balzer82/LatLon2Meter/blob/master/LatLon2Meter.ipynb?create=1">IPython Notebook</a>
+</h4>
+
 <h2>
 <a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use?</h2>
 
@@ -50,25 +54,33 @@ Berechnung über Pythagoras macht -17.18km (0.74%) Fehler.
 'Distance.png' saved. Done.
 </code></pre>
 
-<p><img src="https://raw.github.com/balzer82/LatLon2Meter/master/Distance.png" alt="Globe"></p>
+<p><img src="https://raw.github.com/balzer82/LatLon2Meter/master/Distance-Berlin-Lisbon.png" alt="Globe"></p>
 
 <p>The coordinates (Lat/Lon) have to be in Decimal Degrees, not in DD°mm'ssss''</p>
 
 <h2>
 <a name="what-does-this-do" class="anchor" href="#what-does-this-do"><span class="octicon octicon-link"></span></a>What does this do?</h2>
 
-<p>Calculates the distance between two points with two different methods:</p>
+<p>Calculates the distance between two points with three different methods:</p>
 
 <ul>
 <li>Pythagoras</li>
 <li>Great Circle via Cosine (better)</li>
+<li>Haversine Formula</li>
 </ul><h2>
 <a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h2>
 
 <ul>
-<li>Matplotlib for Globe output</li>
-<li>requests for Reverse-Geoencoding of the Lat/Lon Coordinates</li>
-</ul>
+<li>Matplotlib Basemap for Globe output</li>
+<li>requests for Reverse-Geoencoding of the Lat/Lon Coordinates to Adress</li>
+</ul><h1>
+<a name="latlon2meter-error" class="anchor" href="#latlon2meter-error"><span class="octicon octicon-link"></span></a>LatLon2Meter Error</h1>
+
+<p>Calculates the Error, made with Pythagoras instead of Haversine formula.</p>
+
+<p><img src="https://raw.github.com/balzer82/LatLon2Meter/master/Delta-Latitude.png" alt="Error made while moving North/South"></p>
+
+<p><img src="https://raw.github.com/balzer82/LatLon2Meter/master/Delta-Longitude.png" alt="Error made while moving East/West"></p>
       </section>
       <footer>
         <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
