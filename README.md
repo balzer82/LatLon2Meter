@@ -3,6 +3,8 @@ LatLon2Meter
 
 Python Script to calculate the distance between two points from Lat/Lon Coordinates
 
+####[IPython Notebook](http://nbviewer.ipython.org/github/balzer82/LatLon2Meter/blob/master/LatLon2Meter.ipynb?create=1)
+
 ## How to use?
 
 ```python
@@ -24,11 +26,12 @@ The coordinates (Lat/Lon) have to be in Decimal Degrees, not in DD°mm'ssss''
 
 ## What does this do?
 
-Calculates the distance between two points with two different methods:
+Calculates the distance between two points with three different methods:
 * Pythagoras
 * Great Circle via Cosine (better)
+* Haversine Formula
 
 ## Dependencies
 
-* Matplotlib for Globe output
-* requests for Reverse-Geoencoding of the Lat/Lon Coordinates
+* Matplotlib Basemap for Globe output
+* requests for Reverse-Geoencoding of the Lat/Lon Coordinates to Adress
