@@ -20,7 +20,7 @@ Berechnung über Pythagoras macht -17.18km (0.74%) Fehler.
 'Distance.png' saved. Done.
 ```
 
-![Globe](https://raw.github.com/balzer82/LatLon2Meter/master/Distance.png)
+![Globe](https://raw.github.com/balzer82/LatLon2Meter/master/Distance-Berlin-Lisbon.png)
 
 The coordinates (Lat/Lon) have to be in Decimal Degrees, not in DD°mm'ssss''
 
@@ -35,3 +35,13 @@ Calculates the distance between two points with three different methods:
 
 * Matplotlib Basemap for Globe output
 * requests for Reverse-Geoencoding of the Lat/Lon Coordinates to Adress
+
+
+# LatLon2Meter Error
+
+Calculates the Error, made with Pythagoras instead of Haversine formula.
+
+![Error made while moving North/South](https://raw.github.com/balzer82/LatLon2Meter/master/Delta-Latitude.png)
+
+![Error made while moving East/West](https://raw.github.com/balzer82/LatLon2Meter/master/Delta-Longitude.png)
+

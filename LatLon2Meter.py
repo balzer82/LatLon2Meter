@@ -87,7 +87,9 @@ lon0=(lon1+lon2)/2.0
 
 # <codecell>
 
-arc = 111.323872 # km/°
+R = 6378.388
+arc= 2.0*np.pi*R/360.0
+print('Ein Grad Latitude entspricht %.6fkm' % arc)
 
 # <codecell>
 
@@ -95,11 +97,12 @@ plt.plot(np.arange(0,90.0, 1), arc*np.cos(np.arange(0,90.0*np.pi/180.0, 1.0*np.p
 plt.xlabel('Lat in $^\circ$')
 plt.ylabel('$km/^\circ$ Lon')
 plt.annotate('111.32km', (10.0, 111.32),xycoords='data', \
-            xytext=(30.0, 111.32), textcoords='data', va='center', arrowprops=dict(arrowstyle="simple"))
+            xytext=(30.0, 111.32), textcoords='data', va='center', arrowprops=dict(arrowstyle="simple", color='k'))
 plt.annotate('Equator', (0.0, 0.0),xycoords='data', \
-            xytext=(0.0, -20.0), textcoords='data', ha='center', va='center', arrowprops=dict(arrowstyle="fancy"))
+            xytext=(0.0, -20.0), textcoords='data', ha='center', va='center', arrowprops=dict(arrowstyle="fancy", color='k'))
 plt.annotate('Northpole', (90.0, 0.0),xycoords='data', \
-            xytext=(90.0, -20.0), textcoords='data', ha='center', va='center', arrowprops=dict(arrowstyle="fancy"))
+            xytext=(90.0, -20.0), textcoords='data', ha='center', va='center', arrowprops=dict(arrowstyle="fancy", color='k'))
+plt.savefig('Longitude-Cos-Latitude-Equator-Northpole.png', dpi=150, transparent=True, bbox_inches='tight')
 
 # <codecell>
 
@@ -121,7 +124,6 @@ print('Entfernung aus Pythagoras:\t\t%.3fm (ca. %dkm)' % (dist*1000.0, dist))
 
 # <codecell>
 
-R = 6378.388
 dist2 = R * np.arccos(np.sin(lat1*np.pi/180.0)*np.sin(lat2*np.pi/180.0)+
                              np.cos(lat1*np.pi/180.0)*np.cos(lat2*np.pi/180.0)*
                              np.cos(lon2*np.pi/180.0-lon1*np.pi/180.0))
@@ -195,9 +197,12 @@ ex,ey= m(lon2, lat2)
 plt.text(x, y, '%dkm' % (dist2), color='k', ha='center', va='bottom',fontsize=14)
 plt.text(sx,sy, sadr, color='k', ha='left',fontsize=9)
 plt.text(ex,ey, eadr, color='k', ha='left',fontsize=9)
-fig.savefig('Distance.png',dpi=72,transparent=True,bbox_inches='tight')
+fig.savefig('Distance-Berlin-Lisbon.png',dpi=72,transparent=True,bbox_inches='tight')
 
 # <codecell>
 
-print('\'Distance.png\' saved. Done.')
+print('Done.')
+
+# <codecell>
+
 
